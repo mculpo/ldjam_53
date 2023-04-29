@@ -10,13 +10,11 @@ public class TimeManager : MonoBehaviour
     [SerializeField]
     private float currentlLevelTime;
 
-    // Start is called before the first frame update
     void Start()
     {
         currentlLevelTime = totalLevelTime;
     }
 
-    // Update is called once per frame
     void Update()
     {
         currentlLevelTime -= Time.deltaTime;

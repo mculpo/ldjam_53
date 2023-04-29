@@ -60,9 +60,6 @@ public class Shop : MonoBehaviour
         {
             GameObject order = orders[orders.Count - 1];
             orders.RemoveAt(orders.Count - 1);
-
-            //Debug.Log("Pedido " + order + " retirado com sucesso!");
-
             return order;
         }
 
@@ -74,9 +71,8 @@ public class Shop : MonoBehaviour
         nextOrderTime = UnityEngine.Random.Range(minOrderTime, maxOrderTime);
         GameObject gameObject = new GameObject();
         Order order = gameObject.AddComponent<Order>();
-
-        //orders.Add(order);
-        Debug.Log("Pedido: " + orderType + " criado");
+        order.Type = orderType;
+        orders.Add(gameObject);
         currentOrderTime = 0;
     }
 }
