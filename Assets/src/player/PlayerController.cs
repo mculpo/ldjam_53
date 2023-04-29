@@ -23,31 +23,88 @@ public class PlayerController : MonoBehaviour
 
     private void getInputOrientation()
     {
+ 
+
         if (Input.GetKey(KeyCode.W))
         {
-            vertical = 1;
-            playerBehaviour.direction(Direction.Up);
+            playerBehaviour.addDirection(Direction.Up);
         }
-        else if (Input.GetKey(KeyCode.S))
+        else if(Input.GetKeyUp(KeyCode.W))
         {
-            vertical = -1;
-            playerBehaviour.direction(Direction.Down);
-        }
-        else if (Input.GetKey(KeyCode.A))
-        {
-            horizontal = -1;
-            playerBehaviour.direction(Direction.Left);
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            horizontal = 1;
-            playerBehaviour.direction(Direction.Right);
+            playerBehaviour.removeDirection(Direction.Up);
         }
 
-        if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.S))
         {
-            playerBehaviour.direction(Direction.None);
+            playerBehaviour.addDirection(Direction.Down);
         }
+        else if (Input.GetKeyUp(KeyCode.S))
+        {
+            playerBehaviour.removeDirection(Direction.Down);
+        }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            playerBehaviour.addDirection(Direction.Left);
+        }
+        else if (Input.GetKeyUp(KeyCode.A))
+        {
+            playerBehaviour.removeDirection(Direction.Left);
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            playerBehaviour.addDirection(Direction.Right);
+        }
+        else if (Input.GetKeyUp(KeyCode.D))
+        {
+            playerBehaviour.removeDirection(Direction.Right);
+        }
+
+        // Atualiza a direção do player com base na última direção pressionada
+        if (playerBehaviour.myDirection != Direction.None)
+        {
+            if ((playerBehaviour.myDirection & Direction.Up) != 0)
+            {
+                vertical = 1;
+            }
+
+            if ((playerBehaviour.myDirection & Direction.Down) != 0)
+            {
+                vertical = -1;
+            }
+
+            if ((playerBehaviour.myDirection & Direction.Left) != 0)
+            {
+                horizontal = -1;
+            }
+
+            if ((playerBehaviour.myDirection & Direction.Right) != 0)
+            {
+                horizontal = 1;
+            }
+        }
+
+        /*if (Input.GetKey(KeyCode.W))
+        {
+            vertical = 1;
+            playerBehaviour.addDirection(Direction.Up);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            vertical = -1;
+            playerBehaviour.addDirection(Direction.Down);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            horizontal = -1;
+            playerBehaviour.addDirection(Direction.Left);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            horizontal = 1;
+            playerBehaviour.addDirection(Direction.Right);
+        }*/
     }
 
     private void resetOrientation()

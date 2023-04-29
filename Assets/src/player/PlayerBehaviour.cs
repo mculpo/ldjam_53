@@ -22,8 +22,13 @@ public class PlayerBehaviour : MonoBehaviour
         myTransform.position +=  new Vector3(speed * horizontal * Time.deltaTime, speed * vertical * Time.deltaTime, 0);
     }
 
-    public void direction(Direction direction)
+    public void addDirection(Direction direction)
     {
-        myDirection = direction;
+        myDirection |= direction;
+    }
+
+    public void removeDirection(Direction direction)
+    {
+        myDirection &= ~direction;
     }
 }

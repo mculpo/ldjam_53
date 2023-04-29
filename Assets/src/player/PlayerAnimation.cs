@@ -16,28 +16,28 @@ public class PlayerAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerBehaviour.myDirection.Equals(Direction.Up))
+        if ( (playerBehaviour.myDirection & Direction.Up) != 0)
         {
             animator.SetBool("up", true);
             animator.SetBool("down", false);
             animator.SetBool("right", false);
             animator.SetBool("left", false);
         }
-        if (playerBehaviour.myDirection.Equals(Direction.Down))
+        if ((playerBehaviour.myDirection & Direction.Down) != 0)
         {
             animator.SetBool("left", false);
             animator.SetBool("right", false);
             animator.SetBool("up", false);
             animator.SetBool("down", true);
         }
-        if (playerBehaviour.myDirection.Equals(Direction.Left))
+        if ((playerBehaviour.myDirection & Direction.Left) != 0)
         {
             animator.SetBool("right", false);
             animator.SetBool("left", true);
             animator.SetBool("up", false);
             animator.SetBool("down", false);
         }
-        if (playerBehaviour.myDirection.Equals(Direction.Right))
+        if ((playerBehaviour.myDirection & Direction.Right) != 0)
         {
             animator.SetBool("down", false);
             animator.SetBool("up", false);
