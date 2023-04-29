@@ -26,6 +26,7 @@ public class PlayerOrderHolder : MonoBehaviour
         }
 
         orders.Add(order);
+        //Debug.Log("Pedido " + order + " pego com sucesso!");
     }
 
     public void dropOrder(int index)
