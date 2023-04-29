@@ -1,0 +1,2831 @@
+fileFormatVersion: 2
+guid: 6293c3f51aa40ba418fb427b87fad314
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 652
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63170ad47fbb6534f9f595233d060c06
+      internalID: 891460209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 652
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263a03c376adbb14b84de2e096fcb66b
+      internalID: 1419706659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 652
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70aab0ba4c8a9964db8269a487bbf8f4
+      internalID: -1840885074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_3
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 652
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4083cb23d2a53fd418d459b5b77cfd23
+      internalID: -156675313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_4
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 652
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f2255e756798f48b917ac3906cef23
+      internalID: -430317210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 652
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77124590ea9b6e468278b08da12c246
+      internalID: -1961057284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_6
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 652
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3d0a766582a0246b131d086317831a
+      internalID: -369621044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_7
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 652
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559f7c2809664c44da680152c84530b1
+      internalID: 1649415276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 610
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302ef86928f038f4a89cfb1ff93a76ec
+      internalID: -1528808208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_9
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 610
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b82402aff4822e4caa985552152d023
+      internalID: -1671916807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_10
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 610
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 296ae6f0102f3aa4c8b46e36106cd9a1
+      internalID: 860871558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_11
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 610
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba36328df6f2b5b47ab1d5e3f67aaa9b
+      internalID: -1193433004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_12
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 610
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07eef357d51bba841bee9e0ce8f4a608
+      internalID: -179073450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_13
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 610
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a97cc321d1ca044b3c0222a6971832
+      internalID: 1565868034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_14
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 610
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eddd76ef605263d4ab87704dbcad0d37
+      internalID: 262646905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_15
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 610
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7cc5abfe08964746b6e755b4b9c6c3b
+      internalID: -230427194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_16
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 567
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c58bff00fb046548b60be84b9285261
+      internalID: 498792812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_17
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 567
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc7fd56375543a4fa02ea52299a899d
+      internalID: -1532896965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_18
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 567
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b333a27ac096da4a897dd4e500854f4
+      internalID: 1293859380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_19
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 567
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4efe595e4f6b67645a53c1607026559f
+      internalID: -884869114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_20
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 567
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac8a69ef29b0774ebbe08b66293f6f0
+      internalID: 297840299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_21
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 567
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96156411c3f6c4241a936be1a7c33190
+      internalID: -345995746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_22
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 567
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b1115a3157a8a4b8428f9b929c745f
+      internalID: -2029864141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_23
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 567
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66b074f4662fdb41979f75c2fc2f52a
+      internalID: -1920493791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_24
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 567
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5adc474db402c2e439b887ce4e2a2f80
+      internalID: -1711456999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_25
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 524
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef21768d464b1be488d031d8b8c92a10
+      internalID: 2059758689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_26
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 524
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5143bb9720f9f4883e48c260ed6a66
+      internalID: 1102954739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_27
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 524
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24f26f903796e24bb4b643d9cda3d80
+      internalID: -1064744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_28
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 524
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed04330e276f464889b7633cb175b93
+      internalID: -974956219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_29
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 524
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22788c9ede820f4bbfebd400a0bf148
+      internalID: 1840879853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_30
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 524
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beaa09cd22838f4438e66982cbd5ffda
+      internalID: 1095160926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_31
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 524
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26da4fae65ffb6a42be8a935fc1069b8
+      internalID: 795872633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_32
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 524
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6caa99570af07f04095d932dd6ffb346
+      internalID: 1379815907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_33
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 482
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05df910a9c835fa45a6569b924730794
+      internalID: 282313698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_34
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 482
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6bfe5fb25ae8f4e901b91fa658edd4
+      internalID: -1639049169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_35
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 482
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51c5a6d4afe06c41a2559a4d7bcdfcf
+      internalID: -1450094494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_36
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 482
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8c07388a42fe44b848c4d24f88b909
+      internalID: -1374759429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_37
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 482
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374ccf70078b7c04b9c465341c3ebfb2
+      internalID: -806915423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_38
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 482
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc418804969ad541b3d17b16b9b2c49
+      internalID: 1484617921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_39
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 482
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272f6da82bd40bf4ba7a72d42f439b05
+      internalID: -314639515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_40
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 482
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4075f7a10131e97429e5a33b94647b18
+      internalID: 1938639303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_41
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 438
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058064e1d4da6604ca369b084b6d79bc
+      internalID: -517897307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_42
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 438
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2fb63d129ced04fba7738169537bac
+      internalID: 1509699314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_43
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 438
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e5e27a9d0b64a4596fbb4fe249a525
+      internalID: 1492181388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_44
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 438
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55fe82fb4204124fa609016fa761c16
+      internalID: 1357917483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_45
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 438
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030129b2be920224a83e2fbd69fe9291
+      internalID: 514470343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_46
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 438
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ace8d67bfbb1e45ad7049e6cfa50ba
+      internalID: -1136535617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_47
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 438
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd2bf18db5748641aff73f0e73ff52d
+      internalID: 1731175196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_48
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 438
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c7ab32224662e4c970ae2d97947d7d
+      internalID: -741917498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_49
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 395
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6082e7711d1534d418fd00ad2428d993
+      internalID: -1151208792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_50
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 395
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0408d6c84c9966d40b1f6c4f58ba7299
+      internalID: -398662991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_51
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 395
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379355c316e88084985ae8ac739b2d29
+      internalID: -400468100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_52
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 395
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f33e9b792b1484c9b62a1cb49e1cd5
+      internalID: 928176155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_53
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 395
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234aa2e3cdb478d4ca3756c3b123ede7
+      internalID: 1998145873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_54
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 395
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe81f52664c4cf49b62d2248e51e158
+      internalID: 1914038995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_55
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 395
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2e916c86a17444fba3c6bfc164507a
+      internalID: 503854408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_56
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 395
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed684d7fadd11247bdb9217b58c9dff
+      internalID: -988356910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_57
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 354
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7461c87d3728d6448748787a9943f47
+      internalID: -960355888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_58
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 354
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b2b66de9656254e97625a5ab4311eb
+      internalID: 893121875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_59
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 354
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c73be3b69e15764782e84dbb44a66c1
+      internalID: 1855387238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_60
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 354
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647b011d3788f334e9705517915f6273
+      internalID: 1282618754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_61
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 307
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c90b0f997a1d5fa4a84e133aa9246639
+      internalID: -1271762149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 307
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 670421fc784eb28458770a704a55d307
+      internalID: -770011644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_63
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 307
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb03ce89ff011d4f89ed309e832928e
+      internalID: -1479078651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_64
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 307
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec0c8c51b25c8a45aad5dff0286cea8
+      internalID: -1103138692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_65
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 307
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae62306cf4da0142b6f809402393eeb
+      internalID: 1208088455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_66
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 307
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552bf3c9c7889ef42be82d27e1621428
+      internalID: -976991711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_67
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 307
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42cae509c8f1e3d4fa0b1c3ad9e345d5
+      internalID: 872861686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_68
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 307
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537a718df45678c408a1ff39dc8c7408
+      internalID: -238663325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_69
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 265
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24b52021b89c624788393a880064166
+      internalID: -193586789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_70
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 265
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91e54a974a78494ca409e7c4bf6fdc3
+      internalID: 1932640147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_71
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 265
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54344947bace974f93b5ccd143b85ac
+      internalID: 1393352938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_72
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 265
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4bd53c741089e4f8e0c96bcdacc939
+      internalID: 108489259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_73
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 265
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456bf928405a2c14a8b78853b08bb167
+      internalID: 326472777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_74
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 265
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab2574ce864d4b46895381f2f20a0a7
+      internalID: -1553742087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_75
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 265
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9055f114c276134c846d61384131411
+      internalID: -1925429982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_76
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 265
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0c3d5c7e68d884287bd41772e50add
+      internalID: 401978941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_77
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 223
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6faaf741d36c0e44684a112b1d91ce0e
+      internalID: 659892156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_78
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 223
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef4aa5d8864ac1342a1e235cdd84615e
+      internalID: 378965337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_79
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 223
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a522f1f0820b344bfae645dbdcd1f2
+      internalID: 662415923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_80
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 223
+        width: 15
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34322fe717545074d8e7975618fa2b2d
+      internalID: -1827136010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_81
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 223
+        width: 15
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c130b6bb112b241b1d300e7668268c
+      internalID: -934416535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_82
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 223
+        width: 15
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7d1aebbf709d746a522b8dbc853a50
+      internalID: -543876385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_83
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 223
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2139b20ca18d16439d66cf9ab9c5e71
+      internalID: -273010597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_84
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 223
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a50bfb63a7d6f4cb19558b878e8fe7
+      internalID: -1459373425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_85
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 222
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503a74bc4e0e4c2468657eeb5fc1ae03
+      internalID: -2021853234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_86
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 179
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09740edb4b60e4d4ab8c6bc07c3fd20d
+      internalID: -2061198447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_87
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 179
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee59e8263dc0224894e8756f4107eed
+      internalID: 900894813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_88
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 179
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013988dd516a23a4cacf56db062ba9dd
+      internalID: -393083479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_89
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 179
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7773b7215df0b9945b53c681f6ab30ad
+      internalID: -679129032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_90
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 179
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514486a0aaaf34c4a8bc57faa728f20e
+      internalID: 424144779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_91
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 179
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6d24fd2c24ab14ba93a0bc10361e00
+      internalID: 1893618720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_92
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 179
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27b7c568fa152943baec5675b89933b
+      internalID: 1597330200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_93
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 179
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6864d911e8a5d80409eecf005639fbef
+      internalID: -2060566027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_94
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 137
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107e9676a9b5454468653a65fbecb98a
+      internalID: -119807114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_95
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 137
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f907bccf76bb3cb4da4303deaa040ffa
+      internalID: -1426910689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_96
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 137
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a559f21c43c0e543897467bce4f0bcf
+      internalID: 796860334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_97
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 137
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08fbb73087591b4887af1d758f402ab
+      internalID: 1155475951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_98
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 137
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efede385745d4b240927d161255d2dcf
+      internalID: -626321717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_99
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 137
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5f4b4b4935e4e499bb003a44bc54df
+      internalID: 1633800438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_100
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 137
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4d89869110a6f41894c9f1622f688b
+      internalID: -972368135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_101
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 137
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22b3c4b26f41a049940dc866a243e4b
+      internalID: 1229891573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_102
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 93
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d7b89aae468f04085af9ddde0b9ce3
+      internalID: -114614435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_103
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 93
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3a4ad37b623a24c959a1faca6fdd3c
+      internalID: -2013500759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_104
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 93
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913ad5d9ab42c224097932c67b447fc6
+      internalID: 1279322928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_105
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 93
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70739aa027a4da84da94bb0e8c15f116
+      internalID: -602440560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_106
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 93
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2affb541e1a5a754fb315909cbbd4779
+      internalID: -1548085677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_107
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 93
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e55968b058cccc44baead8278f2d2ec
+      internalID: 545978520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_108
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 93
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a5df674dca2fc4a8031949360269a1
+      internalID: 2067827131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_109
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 93
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c828f1b344b5f24dbb1a151767733b5
+      internalID: -100859229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_110
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 50
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667073a01172ae043b566015e2e13c1a
+      internalID: 173884462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_111
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 50
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a122fd0e6a3925e4c83eb2e56db81dc3
+      internalID: 2062819358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_112
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 50
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae51473d42d20b4d8016801a808d6da
+      internalID: -326182692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_113
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 50
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b2b3cb29d2f6b428d70e4449c717f4
+      internalID: -1536213283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_114
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 50
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe5c887c9c34a742a6a336cbbcd4850
+      internalID: 1234363354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_115
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 50
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a5a52e625bf5147a9709e64bab5291
+      internalID: -1263569023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_116
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 50
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5281d296ec4a23c4d8cfa0cd13dd43ac
+      internalID: -1057456089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_117
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 50
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfbbc30e1e83c447a264dc67fe0f678
+      internalID: -814935247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_118
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 9
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4299cf3ccdf409042a093035d95da177
+      internalID: -2109012513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_119
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 9
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9ac071e5d63294bbec3706d46efc7e
+      internalID: -2145085579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_120
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 9
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d7e594cc032f747b7a87265e9cf49a
+      internalID: 960671960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Paperboy 2 - Paperboy_121
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 9
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4655390a8b208224bafb4b3fb53afc0e
+      internalID: -121530896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SNES - Paperboy 2 - Paperboy_0: 891460209
+      SNES - Paperboy 2 - Paperboy_1: 1419706659
+      SNES - Paperboy 2 - Paperboy_10: 860871558
+      SNES - Paperboy 2 - Paperboy_100: -972368135
+      SNES - Paperboy 2 - Paperboy_101: 1229891573
+      SNES - Paperboy 2 - Paperboy_102: -114614435
+      SNES - Paperboy 2 - Paperboy_103: -2013500759
+      SNES - Paperboy 2 - Paperboy_104: 1279322928
+      SNES - Paperboy 2 - Paperboy_105: -602440560
+      SNES - Paperboy 2 - Paperboy_106: -1548085677
+      SNES - Paperboy 2 - Paperboy_107: 545978520
+      SNES - Paperboy 2 - Paperboy_108: 2067827131
+      SNES - Paperboy 2 - Paperboy_109: -100859229
+      SNES - Paperboy 2 - Paperboy_11: -1193433004
+      SNES - Paperboy 2 - Paperboy_110: 173884462
+      SNES - Paperboy 2 - Paperboy_111: 2062819358
+      SNES - Paperboy 2 - Paperboy_112: -326182692
+      SNES - Paperboy 2 - Paperboy_113: -1536213283
+      SNES - Paperboy 2 - Paperboy_114: 1234363354
+      SNES - Paperboy 2 - Paperboy_115: -1263569023
+      SNES - Paperboy 2 - Paperboy_116: -1057456089
+      SNES - Paperboy 2 - Paperboy_117: -814935247
+      SNES - Paperboy 2 - Paperboy_118: -2109012513
+      SNES - Paperboy 2 - Paperboy_119: -2145085579
+      SNES - Paperboy 2 - Paperboy_12: -179073450
+      SNES - Paperboy 2 - Paperboy_120: 960671960
+      SNES - Paperboy 2 - Paperboy_121: -121530896
+      SNES - Paperboy 2 - Paperboy_13: 1565868034
+      SNES - Paperboy 2 - Paperboy_14: 262646905
+      SNES - Paperboy 2 - Paperboy_15: -230427194
+      SNES - Paperboy 2 - Paperboy_16: 498792812
+      SNES - Paperboy 2 - Paperboy_17: -1532896965
+      SNES - Paperboy 2 - Paperboy_18: 1293859380
+      SNES - Paperboy 2 - Paperboy_19: -884869114
+      SNES - Paperboy 2 - Paperboy_2: -1840885074
+      SNES - Paperboy 2 - Paperboy_20: 297840299
+      SNES - Paperboy 2 - Paperboy_21: -345995746
+      SNES - Paperboy 2 - Paperboy_22: -2029864141
+      SNES - Paperboy 2 - Paperboy_23: -1920493791
+      SNES - Paperboy 2 - Paperboy_24: -1711456999
+      SNES - Paperboy 2 - Paperboy_25: 2059758689
+      SNES - Paperboy 2 - Paperboy_26: 1102954739
+      SNES - Paperboy 2 - Paperboy_27: -1064744
+      SNES - Paperboy 2 - Paperboy_28: -974956219
+      SNES - Paperboy 2 - Paperboy_29: 1840879853
+      SNES - Paperboy 2 - Paperboy_3: -156675313
+      SNES - Paperboy 2 - Paperboy_30: 1095160926
+      SNES - Paperboy 2 - Paperboy_31: 795872633
+      SNES - Paperboy 2 - Paperboy_32: 1379815907
+      SNES - Paperboy 2 - Paperboy_33: 282313698
+      SNES - Paperboy 2 - Paperboy_34: -1639049169
+      SNES - Paperboy 2 - Paperboy_35: -1450094494
+      SNES - Paperboy 2 - Paperboy_36: -1374759429
+      SNES - Paperboy 2 - Paperboy_37: -806915423
+      SNES - Paperboy 2 - Paperboy_38: 1484617921
+      SNES - Paperboy 2 - Paperboy_39: -314639515
+      SNES - Paperboy 2 - Paperboy_4: -430317210
+      SNES - Paperboy 2 - Paperboy_40: 1938639303
+      SNES - Paperboy 2 - Paperboy_41: -517897307
+      SNES - Paperboy 2 - Paperboy_42: 1509699314
+      SNES - Paperboy 2 - Paperboy_43: 1492181388
+      SNES - Paperboy 2 - Paperboy_44: 1357917483
+      SNES - Paperboy 2 - Paperboy_45: 514470343
+      SNES - Paperboy 2 - Paperboy_46: -1136535617
+      SNES - Paperboy 2 - Paperboy_47: 1731175196
+      SNES - Paperboy 2 - Paperboy_48: -741917498
+      SNES - Paperboy 2 - Paperboy_49: -1151208792
+      SNES - Paperboy 2 - Paperboy_5: -1961057284
+      SNES - Paperboy 2 - Paperboy_50: -398662991
+      SNES - Paperboy 2 - Paperboy_51: -400468100
+      SNES - Paperboy 2 - Paperboy_52: 928176155
+      SNES - Paperboy 2 - Paperboy_53: 1998145873
+      SNES - Paperboy 2 - Paperboy_54: 1914038995
+      SNES - Paperboy 2 - Paperboy_55: 503854408
+      SNES - Paperboy 2 - Paperboy_56: -988356910
+      SNES - Paperboy 2 - Paperboy_57: -960355888
+      SNES - Paperboy 2 - Paperboy_58: 893121875
+      SNES - Paperboy 2 - Paperboy_59: 1855387238
+      SNES - Paperboy 2 - Paperboy_6: -369621044
+      SNES - Paperboy 2 - Paperboy_60: 1282618754
+      SNES - Paperboy 2 - Paperboy_61: -1271762149
+      SNES - Paperboy 2 - Paperboy_62: -770011644
+      SNES - Paperboy 2 - Paperboy_63: -1479078651
+      SNES - Paperboy 2 - Paperboy_64: -1103138692
+      SNES - Paperboy 2 - Paperboy_65: 1208088455
+      SNES - Paperboy 2 - Paperboy_66: -976991711
+      SNES - Paperboy 2 - Paperboy_67: 872861686
+      SNES - Paperboy 2 - Paperboy_68: -238663325
+      SNES - Paperboy 2 - Paperboy_69: -193586789
+      SNES - Paperboy 2 - Paperboy_7: 1649415276
+      SNES - Paperboy 2 - Paperboy_70: 1932640147
+      SNES - Paperboy 2 - Paperboy_71: 1393352938
+      SNES - Paperboy 2 - Paperboy_72: 108489259
+      SNES - Paperboy 2 - Paperboy_73: 326472777
+      SNES - Paperboy 2 - Paperboy_74: -1553742087
+      SNES - Paperboy 2 - Paperboy_75: -1925429982
+      SNES - Paperboy 2 - Paperboy_76: 401978941
+      SNES - Paperboy 2 - Paperboy_77: 659892156
+      SNES - Paperboy 2 - Paperboy_78: 378965337
+      SNES - Paperboy 2 - Paperboy_79: 662415923
+      SNES - Paperboy 2 - Paperboy_8: -1528808208
+      SNES - Paperboy 2 - Paperboy_80: -1827136010
+      SNES - Paperboy 2 - Paperboy_81: -934416535
+      SNES - Paperboy 2 - Paperboy_82: -543876385
+      SNES - Paperboy 2 - Paperboy_83: -273010597
+      SNES - Paperboy 2 - Paperboy_84: -1459373425
+      SNES - Paperboy 2 - Paperboy_85: -2021853234
+      SNES - Paperboy 2 - Paperboy_86: -2061198447
+      SNES - Paperboy 2 - Paperboy_87: 900894813
+      SNES - Paperboy 2 - Paperboy_88: -393083479
+      SNES - Paperboy 2 - Paperboy_89: -679129032
+      SNES - Paperboy 2 - Paperboy_9: -1671916807
+      SNES - Paperboy 2 - Paperboy_90: 424144779
+      SNES - Paperboy 2 - Paperboy_91: 1893618720
+      SNES - Paperboy 2 - Paperboy_92: 1597330200
+      SNES - Paperboy 2 - Paperboy_93: -2060566027
+      SNES - Paperboy 2 - Paperboy_94: -119807114
+      SNES - Paperboy 2 - Paperboy_95: -1426910689
+      SNES - Paperboy 2 - Paperboy_96: 796860334
+      SNES - Paperboy 2 - Paperboy_97: 1155475951
+      SNES - Paperboy 2 - Paperboy_98: -626321717
+      SNES - Paperboy 2 - Paperboy_99: 1633800438
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
