@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: cameraShake
+  m_Name: Scanlines
   m_Shader: {fileID: 4800000, guid: 1d906eb329ad9c947a308c0f49cd2a5d, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -70,6 +70,8 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _ScanlineFrequency: 0.4
+    - _ScanlineIntensity: 0.55
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _Speed: 30
