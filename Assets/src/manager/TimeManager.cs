@@ -27,7 +27,6 @@ public class TimeManager : MonoBehaviour
         currentlLevelTime = totalLevelTime;
     }
 
-    // Update is called once per frame
     void Update()
     {
         currentlLevelTime -= Time.deltaTime;

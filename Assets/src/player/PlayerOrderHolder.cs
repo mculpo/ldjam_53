@@ -6,30 +6,33 @@ public class PlayerOrderHolder : MonoBehaviour
 {
     [SerializeField]
     private int maximumOrderCapacity;
-    private List<Order> orders;
+    private List<GameObject> orders;
 
     private void Start()
     {
-        orders = new List<Order>();
+        Orders = new List<GameObject>();
     }
 
     void Update()
     {
-       
+
     }
 
-    public void holdOrder(Order order)
+    public void holdOrder(List<GameObject> orders)
     {
-        if(orders.Count == maximumOrderCapacity)
+        if (Orders.Count == MaximumOrderCapacity)
         {
             return;
         }
 
-        orders.Add(order);
+        Orders.AddRange(orders);
     }
 
     public void dropOrder(int index)
     {
-        orders.RemoveAt(index);
+        Orders.RemoveAt(index);
     }
+
+    public int MaximumOrderCapacity { get => maximumOrderCapacity; set => maximumOrderCapacity = value; }
+    public List<GameObject> Orders { get => orders; set => orders = value; }
 }

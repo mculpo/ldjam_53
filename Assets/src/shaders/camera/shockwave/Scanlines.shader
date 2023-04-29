@@ -1,10 +1,10 @@
-Shader "Custom/CameraShake"
+Shader "Custom/Scanlines"
 {
     Properties
     {
         _MainTex("Texture", 2D) = "white" {}
-        _Magnitude("Magnitude", Range(0, 0.1)) = 0.05
-        _Speed("Speed", Range(0, 10)) = 1
+        _ScanlineIntensity("Scanline Intensity", Range(0, 1)) = 0.5
+        _ScanlineFrequency("Scanline Frequency", Range(0, 200)) = 100
     }
 
         SubShader
@@ -28,25 +28,29 @@ Shader "Custom/CameraShake"
                     float4 vertex : SV_POSITION;
                 };
 
-                float _Magnitude;
-                float _Speed;
+                sampler2D _MainTex;
+                float _ScanlineIntensity;
+                float _ScanlineFrequency;
 
                 v2f vert(appdata v)
                 {
                     v2f o;
-                    o.vertex = UnityObjectToClipPos(v.vertex) + float4(sin(_Time.y * _Speed + v.vertex.xy), 0, 0) * _Magnitude;
+                    o.vertex = UnityObjectToClipPos(v.vertex);
                     o.uv = v.uv;
                     return o;
                 }
 
-                sampler2D _MainTex;
-
                 fixed4 frag(v2f i) : SV_Target
                 {
-                    return tex2D(_MainTex, i.uv);
+                    float4 col = tex2D(_MainTex, i.uv);
+                    float scanline = (frac(i.vertex.y * _ScanlineFrequency) < 0.5) ? 1.0 : 0.0;
+                    col.rgb -= col.rgb * scanline * _ScanlineIntensity;
+                    return col;
                 }
 
                 ENDCG
             }
         }
+
+            FallBack "Diffuse"
 }
