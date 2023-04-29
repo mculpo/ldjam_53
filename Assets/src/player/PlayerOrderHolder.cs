@@ -10,7 +10,7 @@ public class PlayerOrderHolder : MonoBehaviour
 
     private void Start()
     {
-        orders = new List<GameObject>();
+        Orders = new List<GameObject>();
     }
 
     void Update()
@@ -18,18 +18,21 @@ public class PlayerOrderHolder : MonoBehaviour
 
     }
 
-    public void holdOrder(GameObject order)
+    public void holdOrder(List<GameObject> orders)
     {
-        if (orders.Count == maximumOrderCapacity)
+        if (Orders.Count == MaximumOrderCapacity)
         {
             return;
         }
 
-        orders.Add(order);
+        Orders.AddRange(orders);
     }
 
     public void dropOrder(int index)
     {
-        orders.RemoveAt(index);
+        Orders.RemoveAt(index);
     }
+
+    public int MaximumOrderCapacity { get => maximumOrderCapacity; set => maximumOrderCapacity = value; }
+    public List<GameObject> Orders { get => orders; set => orders = value; }
 }

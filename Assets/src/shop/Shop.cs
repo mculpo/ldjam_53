@@ -31,7 +31,6 @@ public class Shop : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        //Debug.Log(currentOrderTime);
         if (orders.Count < maxAvailableOrder)
         {
             currentOrderTime += Time.deltaTime;
@@ -46,24 +45,29 @@ public class Shop : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            if (orders.Count > 0)
+            PlayerOrderHolder player = collision.gameObject.GetComponent<PlayerOrderHolder>();
+
+            if (orders.Count > 0 && player.Orders.Count < player.MaximumOrderCapacity)
             {
-                PlayerOrderHolder player = collision.gameObject.GetComponent<PlayerOrderHolder>();
-                player.holdOrder(takeOrder());
+                player.holdOrder(takeOrder(player.MaximumOrderCapacity - player.Orders.Count));
             }
         }
     }
 
-    public GameObject takeOrder ()
+    public List<GameObject> takeOrder (int bagSpace)
     {
-        if (orders.Count > 0)
+        List<GameObject> ordersTmp = new List<GameObject>();
+
+        foreach (GameObject order in orders)
         {
-            GameObject order = orders[orders.Count - 1];
-            orders.RemoveAt(orders.Count - 1);
-            return order;
+            if (bagSpace == 0) break;
+
+            ordersTmp.Add(order);
+            bagSpace--;
         }
 
-        return null;
+        orders = orders.Except(ordersTmp).ToList();
+        return ordersTmp;
     }
 
     public void makeOrder ()
@@ -74,5 +78,6 @@ public class Shop : MonoBehaviour
         order.Type = orderType;
         orders.Add(gameObject);
         currentOrderTime = 0;
+        Debug.Log(orderType);
     }
 }
