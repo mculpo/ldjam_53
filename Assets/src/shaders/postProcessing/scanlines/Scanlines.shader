@@ -4,7 +4,7 @@ Shader "Custom/Scanlines"
     {
         _MainTex("Texture", 2D) = "white" {}
         _ScanlineIntensity("Scanline Intensity", Range(0, 1)) = 0.5
-        _ScanlineFrequency("Scanline Frequency", Range(0, 200)) = 100
+        _ScanlineFrequency("Scanline Frequency", Range(0.1, 200.)) = 100.1
     }
 
         SubShader

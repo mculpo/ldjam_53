@@ -1,6 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using System.Threading;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,9 +19,13 @@ public class TimeManager : MonoBehaviour
     [SerializeField]
     private float currentGameTime = 0f;
     [SerializeField] 
-    Text countdownText;
+    private Text countdownText;
     [SerializeField]
     private bool timeOver = false;
+    [SerializeField]
+    private event Action<float> AddTime;
+    [SerializeField]
+    private event Action<float> RemoveTime;
 
     // Start is called before the first frame update
     void Start()
@@ -62,6 +69,32 @@ public class TimeManager : MonoBehaviour
                 countdownText.text = "00:00";
                 timeOver = true;
             }
+        }
+    }
+
+    public void increaseCurrentGameTime(float seconds)
+    {
+        currentGameTime += seconds;
+    }
+
+    public void decreaseCurrentGameTime(float seconds)
+    {
+        currentGameTime -= seconds;
+    }
+
+    public void OnObjectivePicked()
+    {
+        if (AddTime != null)
+        {
+            AddTime(10f);
+        }
+    }
+
+    public void OnObjectiveFailed()
+    {
+        if (RemoveTime != null)
+        { 
+            RemoveTime(10f); 
         }
     }
 
