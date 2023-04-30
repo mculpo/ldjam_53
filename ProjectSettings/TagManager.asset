@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Point
   - OrderManager
+  - Shop
   layers:
   - Default
   - TransparentFX

@@ -32,6 +32,7 @@ public class DropPoint : MonoBehaviour
                 if (ordersDelivered.Count > 0)
                 {
                     player.Orders = player.Orders.Except(ordersDelivered).ToList();
+                    Debug.Log("Pedidos Entregues!");
                 }
             }
         }
