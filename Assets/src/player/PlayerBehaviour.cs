@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class PlayerBehaviour : MonoBehaviour
 {
     private Transform myTransform;
+    private Rigidbody2D rigidBody2D;
 
     public float speed = 5f;
     public float rotateSpeed = 150f;
@@ -15,11 +16,12 @@ public class PlayerBehaviour : MonoBehaviour
     void Awake()
     {
         myTransform = GetComponent<Transform>();
+        rigidBody2D = GetComponent<Rigidbody2D>();
     }
 
     public void move(float vertical, float horizontal)
     {
-        myTransform.position +=  new Vector3(speed * horizontal * Time.deltaTime, speed * vertical * Time.deltaTime, 0);
+        rigidBody2D.velocity =  new Vector3(0, 3, 0);
     }
 
     public void addDirection(Direction direction)

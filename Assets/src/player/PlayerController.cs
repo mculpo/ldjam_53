@@ -16,9 +16,9 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        getInputOrientation();
+        //getInputOrientation();
         playerBehaviour.move(vertical, horizontal);
-        resetOrientation();
+        //resetOrientation();
     }
 
     private void getInputOrientation()
