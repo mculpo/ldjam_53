@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
+    private OrderManager orderManager;
     private List<GameObject> orders;
     [SerializeField]
     private OrderType orderType;
@@ -24,6 +25,7 @@ public class Shop : MonoBehaviour
 
     // Start is called before the first frame update
     void Start () {
+        orderManager = GameObject.FindWithTag("OrderManager").GetComponent<OrderManager>();
         orders = new List<GameObject>();
         collider = GetComponent<Collider2D>();
         nextOrderTime = initialOrderTime;
@@ -61,7 +63,7 @@ public class Shop : MonoBehaviour
         foreach (GameObject order in orders)
         {
             if (bagSpace == 0) break;
-
+          
             ordersTmp.Add(order);
             bagSpace--;
         }
@@ -72,12 +74,17 @@ public class Shop : MonoBehaviour
 
     public void makeOrder ()
     {
-        nextOrderTime = UnityEngine.Random.Range(minOrderTime, maxOrderTime);
-        GameObject gameObject = new GameObject();
-        Order order = gameObject.AddComponent<Order>();
-        order.Type = orderType;
-        orders.Add(gameObject);
-        currentOrderTime = 0;
-        Debug.Log(orderType);
+        if (orderManager.AvailableDeliveryPoints.Count > 0)
+        {
+            GameObject gameObject = new GameObject();
+            Order order = gameObject.AddComponent<Order>();
+
+            order.Type = orderType;
+            orderManager.addDeliveryPoint(order);
+            orders.Add(gameObject);
+
+            nextOrderTime = UnityEngine.Random.Range(minOrderTime, maxOrderTime);
+            currentOrderTime = 0;
+        }
     }
 }

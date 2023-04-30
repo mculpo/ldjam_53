@@ -7,7 +7,7 @@ public class Order : MonoBehaviour
     private OrderType type;
     private float maxTime;
     private float currentTime;
-    private DropPoint pos;
+    private GameObject pos;
 
     public Order (OrderType type)
     {
@@ -27,5 +27,5 @@ public class Order : MonoBehaviour
     public OrderType Type { get => type; set => type = value; }
     public float MaxTime { get => maxTime; set => maxTime = value; }
     public float CurrentTime { get => currentTime; set => currentTime = value; }
-    public DropPoint Pos { get => pos; set => pos = value; }
+    public GameObject Pos { get => pos; set => pos = value; }
 }
