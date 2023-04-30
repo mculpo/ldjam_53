@@ -5,13 +5,9 @@ using System.Linq;
 
 public class DropPoint : MonoBehaviour
 {
-    private OrderManager orderManager;
+    
     private Order order;
 
-    void Start()
-    {
-        orderManager = GameObject.FindWithTag("OrderManager").GetComponent<OrderManager>();
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -28,7 +24,7 @@ public class DropPoint : MonoBehaviour
                     Order order = orderGameObject.GetComponent<Order>();
                     if (order.Pos == gameObject)
                     {
-                        orderManager.markPointAsAvailable(gameObject);
+                        OrderManager.instance.markPointAsAvailable(gameObject);
                         ordersDelivered.Add(orderGameObject);
                     }
                 }

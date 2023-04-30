@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OrderManager : MonoBehaviour
+public class OrderManager : Singleton<OrderManager>
 {
     private int points;
     private int ordersDeliveredInTime;
