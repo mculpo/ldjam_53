@@ -23,7 +23,6 @@ public class PlayerController : MonoBehaviour
 
     private void getInputOrientation()
     {
- 
 
         if (Input.GetKey(KeyCode.W))
         {

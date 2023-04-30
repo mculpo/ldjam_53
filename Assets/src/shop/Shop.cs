@@ -8,8 +8,6 @@ using UnityEngine;
 public class Shop : MonoBehaviour
 {
     private OrderManager orderManager;
-    [SerializeField]
-    private GameObject orderArrow;
     private GameObject refMyOrderArrow;
     private List<GameObject> orders;
     [SerializeField]
@@ -98,7 +96,7 @@ public class Shop : MonoBehaviour
 
     public void createOrderArrow()
     {
-        this.refMyOrderArrow = GameObject.Instantiate(orderArrow);
-        this.refMyOrderArrow.GetComponent<ArrowController>().target = transform;
+        refMyOrderArrow = IconsFindManager.instance.getShopIcon(orderType);
+        refMyOrderArrow.GetComponent<ArrowController>().target = transform;
     }
 }

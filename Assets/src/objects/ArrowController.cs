@@ -8,13 +8,12 @@ public class ArrowController : MonoBehaviour
     public float bottomLimit = -4.8f;
 
     private Camera cam;
-    private SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderContent;
     private float distance;
 
     private void Start()
     {
         cam = Camera.main;
-        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
