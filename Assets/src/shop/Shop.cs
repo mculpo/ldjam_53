@@ -59,6 +59,7 @@ public class Shop : MonoBehaviour
             Order order = gameObject.AddComponent<Order>();
             order.Type = orderType;
             order.ShopTarget = this.gameObject;
+            order.MaxTime = UnityEngine.Random.Range(30, 60);
             OrderManager.instance.addDeliveryPoint(order);
             order.EnableIconShop();
             orders.Add(gameObject);

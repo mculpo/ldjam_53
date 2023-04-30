@@ -5,9 +5,7 @@ using System.Linq;
 
 public class DropPoint : MonoBehaviour
 {
-    
     private Order order;
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

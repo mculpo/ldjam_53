@@ -13,7 +13,6 @@ public class OrderManager : Singleton<OrderManager>
     private List<GameObject> availableDeliveryPoints;
     private List<GameObject> unvailableDeliveryPoints;
     private List<GameObject> shops;
-
     
     [SerializeField]
     private float maxOrderTime;
@@ -40,7 +39,6 @@ public class OrderManager : Singleton<OrderManager>
 
     void Update()
     {
-        Debug.Log(CurrentOrders.Count);
         if (currentOrders.Count < MaxOrders)
         {
             CurrentOrderTime += Time.deltaTime;
@@ -64,14 +62,26 @@ public class OrderManager : Singleton<OrderManager>
 
         AvailableDeliveryPoints.Remove(point);
         UnvailableDeliveryPoints.Add(point);
+        point.GetComponent<DropPoint>().Order = order;
         order.Pos = point;
     }
     
     public void markPointAsAvailable (GameObject point)
     {
+        Order order = point.GetComponent<DropPoint>().Order;
+
         UnvailableDeliveryPoints.Remove(point);
         AvailableDeliveryPoints.Add(point);
-        currentOrders.Remove(point.GetComponent<DropPoint>().Order);
+
+        currentOrders.Remove(order);
+
+        if (order.CurrentTime > 0)
+        {
+            incrementOrderDeliveredInTime();
+            return;
+        }
+
+        incrementOrderDeliveredLate();
     }
 
     public int getTotalOrdersDelivered()

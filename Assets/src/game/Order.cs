@@ -21,6 +21,17 @@ public class Order : MonoBehaviour
     {
         CurrentTime = MaxTime;
     }
+
+    void Update ()
+    {
+        if (CurrentTime == 0)
+        {
+            return;
+        }
+
+        CurrentTime -= Time.deltaTime;
+    }
+
     public void DisableIconTarget()
     {
         refIconTarget.SetActive(false);
@@ -50,9 +61,7 @@ public class Order : MonoBehaviour
     public float MaxTime { get => maxTime; set => maxTime = value; }
     public float CurrentTime { get => currentTime; set => currentTime = value; }
     public GameObject Pos { get => pos; set => pos = value; }
-
     public GameObject ShopTarget { get => shopTarget; set => shopTarget = value; }
-
     public GameObject RefIconShop { get => refIconShop; set => refIconShop = value; }
     public GameObject RefIconTarget { get => refIconTarget; set => refIconTarget = value; }
 
