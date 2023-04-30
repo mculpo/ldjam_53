@@ -10,11 +10,16 @@ public class PlayerBehaviour : MonoBehaviour
     public float speed = 5f;
     public float rotateSpeed = 150f;
 
+    public float originalSpeed;
+    public bool isSlowed = false;
+
     public Direction myDirection { get; set; }
 
     void Awake()
     {
         myTransform = GetComponent<Transform>();
+
+        originalSpeed = speed;
     }
 
     public void move(float vertical, float horizontal)
@@ -30,5 +35,20 @@ public class PlayerBehaviour : MonoBehaviour
     public void removeDirection(Direction direction)
     {
         myDirection &= ~direction;
+    }
+
+    public void applySlow(float time)
+    {
+        if (isSlowed)
+        {
+            speed *= 0.75f;
+
+            Invoke("resetSpeed", time);
+        }
+    }
+
+    public void resetSpeed()
+    {
+        speed = originalSpeed;
     }
 }
