@@ -21,7 +21,8 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void move(float vertical, float horizontal)
     {
-        rigidBody2D.velocity =  new Vector3(0, 3, 0);
+        myTransform.position += new Vector3(speed * horizontal * Time.deltaTime, speed * vertical * Time.deltaTime, 0);
+       // rigidBody2D.velocity = new Vector3(speed * horizontal, speed * vertical, 0) * Time.deltaTime;
     }
 
     public void addDirection(Direction direction)
