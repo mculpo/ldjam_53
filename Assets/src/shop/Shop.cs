@@ -1,14 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject orderArrow;
     private OrderManager orderManager;
     private GameObject refMyOrderArrow;
 
@@ -30,10 +29,6 @@ public class Shop : MonoBehaviour
             if (orders.Count > 0 && player.Orders.Count < player.MaximumOrderCapacity)
             {
                 player.holdOrder(takeOrder(player.MaximumOrderCapacity - player.Orders.Count));
-                if(refMyOrderArrow != null)
-                {
-                    Destroy(refMyOrderArrow);
-                }
             }
         }
     }
@@ -45,7 +40,9 @@ public class Shop : MonoBehaviour
         foreach (GameObject order in orders)
         {
             if (bagSpace == 0) break;
-          
+            Order order_aux = order.GetComponent<Order>();
+            order_aux.DisableIconShop();
+            order_aux.EnableIconTarget();
             ordersTmp.Add(order);
             bagSpace--;
         }
@@ -60,21 +57,13 @@ public class Shop : MonoBehaviour
         {
             GameObject gameObject = new GameObject();
             Order order = gameObject.AddComponent<Order>();
-
             order.Type = orderType;
+            order.ShopTarget = this.gameObject;
             OrderManager.instance.addDeliveryPoint(order);
+            order.EnableIconShop();
             orders.Add(gameObject);
-
-            createOrderArrow();
             return order;
         }
-
         return null;
-    }
-
-    public void createOrderArrow()
-    {
-        refMyOrderArrow = IconsFindManager.instance.getShopIcon(orderType);
-        refMyOrderArrow.GetComponent<ArrowController>().target = transform;
     }
 }
