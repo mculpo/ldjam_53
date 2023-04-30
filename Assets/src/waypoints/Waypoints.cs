@@ -4,14 +4,34 @@ using UnityEngine;
 
 public class Waypoints : MonoBehaviour
 {
-    public Transform[] nextPoint;
-    public int layer;
+    [SerializeField]
+    Transform[] waypoints;
 
-    private void OnDrawGizmos()
+    [SerializeField]
+    float moveSpeed = 3f;
+
+    int waypointIndex = 0;
+
+    void Start()
     {
-        foreach (Transform t in transform)
-        {
+        transform.position = waypoints[waypointIndex].transform.position;
+    }
 
-        }
+    void Update()
+    {
+        moveWaypoints();
+    }
+
+    void moveWaypoints()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, 
+                                                waypoints[waypointIndex].transform.position, 
+                                                moveSpeed * Time.deltaTime);
+        
+        if (transform.position == waypoints[waypointIndex].transform.position)
+            waypointIndex++;
+
+        if (waypointIndex == waypoints.Length)
+            waypointIndex = 0;
     }
 }
