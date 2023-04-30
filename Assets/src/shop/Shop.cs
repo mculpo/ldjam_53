@@ -7,8 +7,12 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
+<<<<<<< HEAD
     [SerializeField]
     private GameObject orderArrow;
+=======
+    private OrderManager orderManager;
+>>>>>>> bac3c9487e4ca72666200f31cca3a11dcd8e28d0
     private GameObject refMyOrderArrow;
 
     [SerializeField]
@@ -73,7 +77,7 @@ public class Shop : MonoBehaviour
 
     public void createOrderArrow()
     {
-        this.refMyOrderArrow = GameObject.Instantiate(orderArrow);
-        this.refMyOrderArrow.GetComponent<ArrowController>().target = transform;
+        refMyOrderArrow = IconsFindManager.instance.getShopIcon(orderType);
+        refMyOrderArrow.GetComponent<ArrowController>().target = transform;
     }
 }

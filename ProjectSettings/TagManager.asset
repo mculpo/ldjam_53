@@ -44,6 +44,12 @@ TagManager:
   - name: street
     uniqueID: 171385557
     locked: 0
+  - name: player
+    uniqueID: 2837516833
+    locked: 0
+  - name: roof
+    uniqueID: 3528118759
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
