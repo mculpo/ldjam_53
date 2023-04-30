@@ -7,12 +7,9 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
-<<<<<<< HEAD
     [SerializeField]
     private GameObject orderArrow;
-=======
     private OrderManager orderManager;
->>>>>>> bac3c9487e4ca72666200f31cca3a11dcd8e28d0
     private GameObject refMyOrderArrow;
 
     [SerializeField]
