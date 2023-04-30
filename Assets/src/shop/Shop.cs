@@ -8,6 +8,9 @@ using UnityEngine;
 public class Shop : MonoBehaviour
 {
     private OrderManager orderManager;
+    [SerializeField]
+    private GameObject orderArrow;
+    private GameObject refMyOrderArrow;
     private List<GameObject> orders;
     [SerializeField]
     private OrderType orderType;
@@ -52,6 +55,10 @@ public class Shop : MonoBehaviour
             if (orders.Count > 0 && player.Orders.Count < player.MaximumOrderCapacity)
             {
                 player.holdOrder(takeOrder(player.MaximumOrderCapacity - player.Orders.Count));
+                if(refMyOrderArrow != null)
+                {
+                    Destroy(refMyOrderArrow);
+                }
             }
         }
     }
@@ -85,6 +92,13 @@ public class Shop : MonoBehaviour
 
             nextOrderTime = UnityEngine.Random.Range(minOrderTime, maxOrderTime);
             currentOrderTime = 0;
+            createOrderArrow();
         }
+    }
+
+    public void createOrderArrow()
+    {
+        this.refMyOrderArrow = GameObject.Instantiate(orderArrow);
+        this.refMyOrderArrow.GetComponent<ArrowController>().target = transform;
     }
 }
