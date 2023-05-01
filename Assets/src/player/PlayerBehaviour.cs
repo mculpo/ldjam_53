@@ -10,6 +10,8 @@ public class PlayerBehaviour : MonoBehaviour
     public float speed = 5f;
     public float rotateSpeed = 150f;
 
+    private AudioSource audioSource;
+
     private float originalSpeed;
     public bool isSlowed = false;
 
@@ -20,9 +22,23 @@ public class PlayerBehaviour : MonoBehaviour
 
     public Direction myDirection { get; set; }
 
+    void Update()
+    {
+        if (myDirection != Direction.None && !audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
+        else if (myDirection == Direction.None && audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
+    }
+
     void Awake()
     {
         myTransform = GetComponent<Transform>();
+
+        audioSource = GetComponent<AudioSource>();
 
         originalSpeed = speed;
         originalShader = visualShader.material;
