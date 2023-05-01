@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Credits.unity
     guid: 103e432e1f9f31749b96d9f2df585e14
   - enabled: 1
+    path: Assets/Scenes/Tutotial.unity
+    guid: 67c1ff812f8688e4ea81dc58fde6543a
+  - enabled: 1
     path: Assets/Scenes/Map.unity
     guid: 962f14f408ba54541888eb732c0436da
   - enabled: 1

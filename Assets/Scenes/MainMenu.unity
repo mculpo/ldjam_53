@@ -622,7 +622,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0642737856212be4192ac511c395b2c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 2
+  durationIn: 1
+  durationOut: 1
 --- !u!114 &883169156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -900,7 +901,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Map
+          m_StringArgument: Tutotial
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 853024866}
@@ -1334,8 +1335,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8654079ee9dcafa4ab81e8dd37ba0ff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 0.1
   maxScale: 1
   minScale: 0.6
-  maxRotation: 40
-  minRotation: -40
+  maxRotation: 5
+  minRotation: -5
