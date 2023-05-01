@@ -37,13 +37,11 @@ public class PlayerBehaviour : MonoBehaviour
     void Awake()
     {
         myTransform = GetComponent<Transform>();
-<<<<<<< HEAD
+
         audioSource = GetComponent<AudioSource>();
-=======
 
         originalSpeed = speed;
         originalShader = visualShader.material;
->>>>>>> 8d9a2a0a2002f97ed6d8ffbb5014f995c113011c
     }
 
     public void move(float vertical, float horizontal)
