@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     float horizontal = 0;
     float vertical = 0;
     private PlayerBehaviour playerBehaviour;
-  
+
     private void Awake()
     {
         playerBehaviour = GetComponent<PlayerBehaviour>();
@@ -23,39 +23,41 @@ public class PlayerController : MonoBehaviour
 
     private void getInputOrientation()
     {
+        float joyHorizontal = Input.GetAxis("Horizontal");
+        float joyVertical = Input.GetAxis("Vertical");
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) || joyVertical > 0.0f)
         {
             playerBehaviour.addDirection(Direction.Up);
         }
-        else if(Input.GetKeyUp(KeyCode.W))
+        else if (Input.GetKeyUp(KeyCode.W) || joyVertical == 0.0f)
         {
             playerBehaviour.removeDirection(Direction.Up);
         }
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) || joyVertical < 0.0f)
         {
             playerBehaviour.addDirection(Direction.Down);
         }
-        else if (Input.GetKeyUp(KeyCode.S))
+        else if (Input.GetKeyUp(KeyCode.S) || joyVertical == 0.0f)
         {
             playerBehaviour.removeDirection(Direction.Down);
         }
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || joyHorizontal < 0.0f)
         {
             playerBehaviour.addDirection(Direction.Left);
         }
-        else if (Input.GetKeyUp(KeyCode.A))
+        else if (Input.GetKeyUp(KeyCode.A) || joyHorizontal == 0.0f)
         {
             playerBehaviour.removeDirection(Direction.Left);
         }
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) || joyHorizontal > 0.0f)
         {
             playerBehaviour.addDirection(Direction.Right);
         }
-        else if (Input.GetKeyUp(KeyCode.D))
+        else if (Input.GetKeyUp(KeyCode.D) || joyHorizontal == 0.0f)
         {
             playerBehaviour.removeDirection(Direction.Right);
         }
@@ -83,27 +85,6 @@ public class PlayerController : MonoBehaviour
                 horizontal = 1;
             }
         }
-
-        /*if (Input.GetKey(KeyCode.W))
-        {
-            vertical = 1;
-            playerBehaviour.addDirection(Direction.Up);
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            vertical = -1;
-            playerBehaviour.addDirection(Direction.Down);
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            horizontal = -1;
-            playerBehaviour.addDirection(Direction.Left);
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            horizontal = 1;
-            playerBehaviour.addDirection(Direction.Right);
-        }*/
     }
 
     private void resetOrientation()
