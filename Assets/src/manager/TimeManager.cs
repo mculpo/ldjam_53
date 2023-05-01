@@ -55,7 +55,8 @@ public class TimeManager : Singleton<TimeManager>
 
             if (currentGameTime <= 0)
             {
-                if(!audioSource.isPlaying)
+                currentGameTime = 0;
+                if (!audioSource.isPlaying)
                     audioSource.Play();
                 MainMenuManager.instance.loadScene("Score");
             }
