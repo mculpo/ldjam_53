@@ -29,6 +29,14 @@ public class PlayerOrderHolder : MonoBehaviour
         Orders.AddRange(orders);
     }
 
+    public void increaseOrderTime(float time)
+    {
+        foreach (GameObject order in Orders)
+        {
+            order.GetComponent<Order>().increaseTime(time);
+        }
+    }
+
     public void dropOrder(int index)
     {
         Orders.RemoveAt(index);
