@@ -41,6 +41,12 @@ public class Order : MonoBehaviour
         refIconShop.SetActive(false);
     }
 
+    public void increaseTime(float time)
+    {
+        currentTime += time;
+        Debug.Log(currentTime);
+    }
+
     public void EnableArrowOrder()
     {
         refIconShop = IconsFindManager.instance.getShopIcon(type);

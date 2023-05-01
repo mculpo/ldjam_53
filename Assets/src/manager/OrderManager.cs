@@ -94,6 +94,14 @@ public class OrderManager : Singleton<OrderManager>
         incrementOrderDeliveredLate();
     }
 
+    public void applyTime(float time)
+    {
+        foreach (Order order in currentOrders)
+        {
+            order.GetComponent<Order>().increaseTime(time);
+        }
+    }
+
     public int getTotalOrdersDelivered()
     {
         return ordersDeliveredInTime + ordersDeliveredLate;
