@@ -74,6 +74,7 @@ public class OrderManager : Singleton<OrderManager>
         AvailableDeliveryPoints.Add(point);
 
         currentOrders.Remove(order);
+        Destroy(order.gameObject);
 
         if (order.CurrentTime > 0)
         {

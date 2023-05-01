@@ -24,7 +24,7 @@ public class UIOrderBehaviour : MonoBehaviour
     }
     private void OnEnable()
     {
-        orderTime.color = Color.red;
+        orderTime.color = Color.white;
     }
     public void DrawTime()
     {

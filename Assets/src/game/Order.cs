@@ -19,17 +19,17 @@ public class Order : MonoBehaviour
 
     void Start()
     {
-        CurrentTime = MaxTime;
+        currentTime = MaxTime;
     }
 
     void Update ()
     {
-        if (CurrentTime <= 0)
+        if (currentTime <= 0)
         {
             return;
         }
 
-        CurrentTime -= Time.deltaTime;
+        currentTime -= Time.deltaTime;
     }
 
     public void DisableArrowDelivering()
