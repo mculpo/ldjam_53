@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &261518350676010325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 261518350676010323}
+  - component: {fileID: 261518350676010322}
+  - component: {fileID: 261518350676010321}
+  - component: {fileID: 261518350676010320}
+  - component: {fileID: 261518350676010334}
+  - component: {fileID: 261518350676010335}
+  m_Layer: 0
+  m_Name: Gerenciador
+  m_TagString: OrderManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &261518350676010323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261518350676010325}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.3913035, y: 3.2986045, z: 5.27}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &261518350676010322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261518350676010325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89db404067c498441998e4957a27d455, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxOrders: 5
+  maxOrderTime: 5
+  minOrderTime: 2
+  initialOrderTime: 0
+--- !u!114 &261518350676010321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261518350676010325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e700f1c5d224fbe48998ab821668b312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &261518350676010320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261518350676010325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b7aeba9f909ac847b76095ddf20ad1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopIcon: {fileID: 7510756680860476498, guid: 1352c452bd75c45479d7a403bfa357c5, type: 3}
+  arrowFindIcon: {fileID: 7510756680860476498, guid: 555e38d1cf11bf242be5615a845900c1, type: 3}
+  hamburguer: {fileID: 2114184063, guid: c746c468c90c87247993ca11f886bb3f, type: 3}
+  pizza: {fileID: -81692306, guid: c746c468c90c87247993ca11f886bb3f, type: 3}
+--- !u!114 &261518350676010334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261518350676010325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebbdb3d0a6cb8554f950dff658bc7b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalLevelTime: 0
+  currentlLevelTime: 0
+  startingGameTime: 600
+  currentGameTime: 0
+  timeOver: 0
+--- !u!114 &261518350676010335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261518350676010325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f818727999d084c89233e0b2f94b74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  order: {fileID: 0}
+  currentTime: {fileID: 0}
+  objectsOrdersReady:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  objectsOrdersDelivering:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  availableColors:
+  - {r: 0.16500667, g: 1, b: 0.08962262, a: 1}
+  - {r: 1, g: 0.937262, b: 0, a: 1}
+  - {r: 1, g: 0.5009521, b: 0, a: 1}
+  - {r: 0, g: 0.20595741, b: 1, a: 1}

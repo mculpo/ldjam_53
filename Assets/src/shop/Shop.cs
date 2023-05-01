@@ -41,8 +41,10 @@ public class Shop : MonoBehaviour
         {
             if (bagSpace == 0) break;
             Order order_aux = order.GetComponent<Order>();
-            order_aux.DisableIconShop();
-            order_aux.EnableIconTarget();
+            order_aux.DisableArrowOrder();
+            UIGameManager.instance.DisableUIOrder(order_aux);
+            order_aux.EnableArrowDelivering();
+            UIGameManager.instance.EnableUIDelivering(order_aux);
             ordersTmp.Add(order);
             bagSpace--;
         }
@@ -59,9 +61,10 @@ public class Shop : MonoBehaviour
             Order order = gameObject.AddComponent<Order>();
             order.Type = orderType;
             order.ShopTarget = this.gameObject;
-            order.MaxTime = UnityEngine.Random.Range(30, 60);
+            order.MaxTime = UnityEngine.Random.Range(10, 15);
             OrderManager.instance.addDeliveryPoint(order);
-            order.EnableIconShop();
+            order.EnableArrowOrder();
+            UIGameManager.instance.EnableUIOrder(order);
             orders.Add(gameObject);
             return order;
         }

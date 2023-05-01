@@ -19,38 +19,36 @@ public class Order : MonoBehaviour
 
     void Start()
     {
-        CurrentTime = MaxTime;
+        currentTime = MaxTime;
     }
 
     void Update ()
     {
-        if (CurrentTime == 0)
+        if (currentTime <= 0)
         {
             return;
         }
 
-        CurrentTime -= Time.deltaTime;
+        currentTime -= Time.deltaTime;
     }
 
-    public void DisableIconTarget()
+    public void DisableArrowDelivering()
     {
         refIconTarget.SetActive(false);
-        refIconTarget = null;
     }
-    public void DisableIconShop()
+    public void DisableArrowOrder()
     {
         refIconShop.SetActive(false);
-        refIconShop = null;
     }
 
-    public void EnableIconShop()
+    public void EnableArrowOrder()
     {
         refIconShop = IconsFindManager.instance.getShopIcon(type);
         refIconShop.GetComponent<ArrowController>().target = shopTarget.transform;
         refIconShop.SetActive(true);
     }
 
-    public void EnableIconTarget()
+    public void EnableArrowDelivering()
     {
         refIconTarget = IconsFindManager.instance.getArrowFindIcon();
         refIconTarget.GetComponent<ArrowController>().target = pos.transform;

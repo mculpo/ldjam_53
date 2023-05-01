@@ -10,7 +10,17 @@ public class PlayerBehaviour : MonoBehaviour
     public float speed = 5f;
     public float rotateSpeed = 150f;
 
+<<<<<<< HEAD
     private AudioSource audioSource;
+=======
+    private float originalSpeed;
+    public bool isSlowed = false;
+
+    [SerializeField]
+    private SpriteRenderer visualShader;  
+    private Material originalShader;
+    public Material pulseEffect;
+>>>>>>> 8d9a2a0a2002f97ed6d8ffbb5014f995c113011c
 
     public Direction myDirection { get; set; }
 
@@ -29,11 +39,18 @@ public class PlayerBehaviour : MonoBehaviour
     void Awake()
     {
         myTransform = GetComponent<Transform>();
+<<<<<<< HEAD
         audioSource = GetComponent<AudioSource>();
+=======
+
+        originalSpeed = speed;
+        originalShader = visualShader.material;
+>>>>>>> 8d9a2a0a2002f97ed6d8ffbb5014f995c113011c
     }
 
     public void move(float vertical, float horizontal)
     {
+        Debug.Log(speed);
         myTransform.position +=  new Vector3(speed * horizontal * Time.deltaTime, speed * vertical * Time.deltaTime, 0);
     }
 
@@ -45,5 +62,36 @@ public class PlayerBehaviour : MonoBehaviour
     public void removeDirection(Direction direction)
     {
         myDirection &= ~direction;
+    }
+
+    public void applySlow(float time)
+    {
+        if (!isSlowed)
+        {
+            isSlowed = true;
+
+            speed *= 0.75f;
+
+            applyPulseEffect();
+
+            Invoke("resetSpeed", time);
+            Invoke("resetShader", time);
+        }
+    }
+
+    public void resetSpeed()
+    {
+        isSlowed = false;
+        speed = originalSpeed;
+    }
+
+    public void applyPulseEffect()
+    {
+        visualShader.material = pulseEffect;
+    }
+
+    public void resetShader()
+    {
+        visualShader.material = originalShader;
     }
 }

@@ -22,7 +22,8 @@ public class DropPoint : MonoBehaviour
                     Order order = orderGameObject.GetComponent<Order>();
                     if (order.Pos == gameObject)
                     {
-                        order.DisableIconTarget();
+                        order.DisableArrowDelivering();
+                        UIGameManager.instance.DisableUIDelivering(order);
                         OrderManager.instance.markPointAsAvailable(gameObject);
                         ordersDelivered.Add(orderGameObject);
                     }
