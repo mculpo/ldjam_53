@@ -53,6 +53,9 @@ TagManager:
   - name: roof
     uniqueID: 3528118759
     locked: 0
+  - name: arrow
+    uniqueID: 1941996571
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

@@ -13,7 +13,8 @@ public class PlayerBehaviour : MonoBehaviour
     private float originalSpeed;
     public bool isSlowed = false;
 
-    private Renderer visualShader;  
+    [SerializeField]
+    private SpriteRenderer visualShader;  
     private Material originalShader;
     public Material pulseEffect;
 
@@ -24,8 +25,6 @@ public class PlayerBehaviour : MonoBehaviour
         myTransform = GetComponent<Transform>();
 
         originalSpeed = speed;
-
-        visualShader = GetComponent<Renderer>();
         originalShader = visualShader.material;
     }
 
@@ -68,13 +67,11 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void applyPulseEffect()
     {
-        visualShader = GetComponent<Renderer>();
         visualShader.material = pulseEffect;
     }
 
     public void resetShader()
     {
-        visualShader = GetComponent<Renderer>();
         visualShader.material = originalShader;
     }
 }
