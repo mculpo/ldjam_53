@@ -18,6 +18,12 @@ public class MainMenuManager : MonoBehaviour
         StartCoroutine(onLoadScene(NameScene));
     }
 
+    public void loadSceneAndDelete(string NameScene, GameObject delete)
+    {
+        Destroy(delete);
+        StartCoroutine(onLoadScene(NameScene));
+    }
+
     public IEnumerator onLoadScene(string NameScene)
     {
         yield return StartCoroutine(FadeController.instance.FadeInCoroutine());

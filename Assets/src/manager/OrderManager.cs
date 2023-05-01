@@ -8,8 +8,8 @@ public class OrderManager : Singleton<OrderManager>
     private int maxOrders;
     private List<Order> currentOrders;
     private int points;
-    private int ordersDeliveredInTime;
-    private int ordersDeliveredLate;
+    public static int ordersDeliveredInTime;
+    public static int ordersDeliveredLate;
     private List<GameObject> availableDeliveryPoints;
     private List<GameObject> unvailableDeliveryPoints;
     private List<GameObject> shops;
