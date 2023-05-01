@@ -22,6 +22,7 @@ public class UIGameManager : Singleton<UIGameManager>
     void Update()
     {
         DrawTime();
+        DrawOrders();
     }
 
     public void DrawTime()
@@ -34,7 +35,7 @@ public class UIGameManager : Singleton<UIGameManager>
 
     public void DrawOrders()
     {
-        
+        order.text = OrderManager.instance.getTotalOrdersDelivered().ToString("00000");
     }
 
     public void EnableUIOrder(Order order)
