@@ -10,8 +10,12 @@ public class PlayerBehaviour : MonoBehaviour
     public float speed = 5f;
     public float rotateSpeed = 150f;
 
-    public float originalSpeed;
+    private float originalSpeed;
     public bool isSlowed = false;
+
+    private Renderer visualShader;  
+    private Material originalShader;
+    public Material pulseEffect;
 
     public Direction myDirection { get; set; }
 
@@ -20,6 +24,9 @@ public class PlayerBehaviour : MonoBehaviour
         myTransform = GetComponent<Transform>();
 
         originalSpeed = speed;
+
+        visualShader = GetComponent<Renderer>();
+        originalShader = visualShader.material;
     }
 
     public void move(float vertical, float horizontal)
@@ -43,12 +50,27 @@ public class PlayerBehaviour : MonoBehaviour
         {
             speed *= 0.75f;
 
+            applyPulseEffect();
+
             Invoke("resetSpeed", time);
+            Invoke("resetShader", time);
         }
     }
 
     public void resetSpeed()
     {
         speed = originalSpeed;
+    }
+
+    public void applyPulseEffect()
+    {
+        visualShader = GetComponent<Renderer>();
+        visualShader.material = pulseEffect;
+    }
+
+    public void resetShader()
+    {
+        visualShader = GetComponent<Renderer>();
+        visualShader.material = originalShader;
     }
 }
