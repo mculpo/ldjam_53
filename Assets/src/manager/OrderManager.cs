@@ -23,6 +23,8 @@ public class OrderManager : Singleton<OrderManager>
     [SerializeField]
     private float initialOrderTime;
 
+    private AudioSource[] audioSources;
+
     void Start()
     {
         points = 0;
@@ -35,6 +37,8 @@ public class OrderManager : Singleton<OrderManager>
         Shops = new List<GameObject>();
         Shops.AddRange(GameObject.FindGameObjectsWithTag("Shop"));
         NextOrderTime = InitialOrderTime;
+
+        audioSources = GetComponents<AudioSource>();
     }
 
     void Update()
@@ -48,6 +52,11 @@ public class OrderManager : Singleton<OrderManager>
                 Shop shop = Shops[randomShopIndex].GetComponent<Shop>();
 
                 currentOrders.Add(shop.makeOrder());
+
+                if (!audioSources[0].isPlaying) 
+                {
+                    audioSources[0].Play();
+                }
 
                 NextOrderTime = UnityEngine.Random.Range(MinOrderTime, MaxOrderTime);
                 CurrentOrderTime = 0;

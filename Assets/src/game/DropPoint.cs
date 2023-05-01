@@ -10,6 +10,14 @@ public class DropPoint : MonoBehaviour
     private GameObject particleEffect;
     [SerializeField]
     private GameObject imageEffect;
+
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
@@ -28,6 +36,12 @@ public class DropPoint : MonoBehaviour
                         order.DisableArrowDelivering();
                         UIGameManager.instance.DisableUIDelivering(order);
                         OrderManager.instance.markPointAsAvailable(gameObject);
+
+                        if (!audioSource.isPlaying)
+                        {
+                            audioSource.Play();
+                        }
+
                         ordersDelivered.Add(orderGameObject);
                     }
                 }
