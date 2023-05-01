@@ -21,6 +21,8 @@ public class PlayerBehaviour : MonoBehaviour
     private SpriteRenderer visualShader;
     private Material originalShader;
     public Material pulseEffect;
+    public Material powerUpEffect1;
+    public Material powerUpEffect;
 
     public Direction myDirection { get; set; }
 
@@ -75,7 +77,7 @@ public class PlayerBehaviour : MonoBehaviour
 
             speed *= 0.75f;
 
-            applyPulseEffect(new Color(70, 20, 0, 1));
+            applyPulseEffect(pulseEffect);
 
             Invoke("resetSpeed", time);
             Invoke("resetShader", time);
@@ -90,7 +92,7 @@ public class PlayerBehaviour : MonoBehaviour
 
             speed *= 1.5f;
 
-            applyPulseEffect(new Color(30, 80, 180, 1));
+            applyPulseEffect(powerUpEffect);
 
             Invoke("resetSpeed", time);
             Invoke("resetShader", time);
@@ -103,7 +105,7 @@ public class PlayerBehaviour : MonoBehaviour
         {
             isIvencible = true;
 
-            applyPulseEffect(new Color(20, 20, 50, 0.6F));
+            applyPulseEffect(powerUpEffect1);
 
             Invoke("resetInvencibility", time);
             Invoke("resetShader", time);
@@ -122,15 +124,13 @@ public class PlayerBehaviour : MonoBehaviour
         isIvencible = false;
     }
 
-    public void applyPulseEffect(Color color)
+    public void applyPulseEffect(Material m)
     {
-        visualShader.color = color;
-        visualShader.material = pulseEffect;
+        visualShader.material = m;
     }
 
     public void resetShader()
     {
-        visualShader.color = Color.white;
         visualShader.material = originalShader;
     }
 }

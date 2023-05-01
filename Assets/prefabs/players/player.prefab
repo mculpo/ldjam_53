@@ -55,8 +55,12 @@ MonoBehaviour:
   speed: 5
   rotateSpeed: 200
   isSlowed: 0
+  isSpeeded: 0
+  isIvencible: 0
   visualShader: {fileID: 5140124564665949066}
-  pulseEffect: {fileID: 0}
+  pulseEffect: {fileID: 2100000, guid: dc2e1ac43e614c142a3afa41473d78ed, type: 2}
+  powerUpEffect1: {fileID: 2100000, guid: a97196b7974a7024ca560da2e41a4088, type: 2}
+  powerUpEffect: {fileID: 2100000, guid: e9100c7a2954a67419723770fc0ad30d, type: 2}
 --- !u!114 &5140124563391717362
 MonoBehaviour:
   m_ObjectHideFlags: 0
