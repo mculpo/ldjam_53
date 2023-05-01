@@ -8,6 +8,18 @@ public class Waypoints : MonoBehaviour
     Transform[] waypoints;
 
     [SerializeField]
+    Sprite upSprite;
+    [SerializeField]
+    Sprite downSprite;
+    [SerializeField]
+    Sprite rightSprite;
+    [SerializeField]
+    Sprite leftSprite;
+
+    Rigidbody2D rb;
+    SpriteRenderer sr;
+
+    [SerializeField]
     float moveSpeed = 3f;
 
     int waypointIndex = 0;
@@ -15,6 +27,8 @@ public class Waypoints : MonoBehaviour
     void Start()
     {
         transform.position = waypoints[waypointIndex].transform.position;
+        rb = gameObject.GetComponent<Rigidbody2D>();
+        sr = gameObject.GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -24,14 +38,29 @@ public class Waypoints : MonoBehaviour
 
     void moveWaypoints()
     {
-        transform.position = Vector2.MoveTowards(transform.position, 
-                                                waypoints[waypointIndex].transform.position, 
-                                                moveSpeed * Time.deltaTime);
+        rb.velocity = (waypoints[waypointIndex].transform.position - gameObject.transform.position).normalized * moveSpeed;
         
-        if (transform.position == waypoints[waypointIndex].transform.position)
+        if ((waypoints[waypointIndex].transform.position - gameObject.transform.position).magnitude < 0.1)
             waypointIndex++;
 
         if (waypointIndex == waypoints.Length)
             waypointIndex = 0;
+
+        if(rb.velocity.x > 0 && Mathf.Abs(rb.velocity.x) > Mathf.Abs(rb.velocity.y))
+        {
+            sr.sprite = rightSprite;
+        } 
+        else if (rb.velocity.x < 0 && Mathf.Abs(rb.velocity.x) > Mathf.Abs(rb.velocity.y))
+        {
+            sr.sprite = leftSprite;
+        }
+        else if (rb.velocity.y > 0 && Mathf.Abs(rb.velocity.x) < Mathf.Abs(rb.velocity.y))
+        {
+            sr.sprite = upSprite;
+        }
+        else if (rb.velocity.y < 0 && Mathf.Abs(rb.velocity.x) < Mathf.Abs(rb.velocity.y))
+        {
+            sr.sprite = downSprite;
+        }
     }
 }

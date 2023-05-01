@@ -30,6 +30,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void move(float vertical, float horizontal)
     {
+        Debug.Log(speed);
         myTransform.position +=  new Vector3(speed * horizontal * Time.deltaTime, speed * vertical * Time.deltaTime, 0);
     }
 
@@ -45,8 +46,10 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void applySlow(float time)
     {
-        if (isSlowed)
+        if (!isSlowed)
         {
+            isSlowed = true;
+
             speed *= 0.75f;
 
             applyPulseEffect();
@@ -58,6 +61,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void resetSpeed()
     {
+        isSlowed = false;
         speed = originalSpeed;
     }
 
