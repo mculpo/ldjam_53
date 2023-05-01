@@ -23,41 +23,39 @@ public class PlayerController : MonoBehaviour
 
     private void getInputOrientation()
     {
-        float joyHorizontal = Input.GetAxis("Horizontal");
-        float joyVertical = Input.GetAxis("Vertical");
-
-        if (Input.GetKey(KeyCode.W) || joyVertical > 0.0f)
+       
+        if (Input.GetKey(KeyCode.W) )
         {
             playerBehaviour.addDirection(Direction.Up);
         }
-        else if (Input.GetKeyUp(KeyCode.W) || joyVertical == 0.0f)
+        else if (Input.GetKeyUp(KeyCode.W) )
         {
             playerBehaviour.removeDirection(Direction.Up);
         }
 
-        if (Input.GetKey(KeyCode.S) || joyVertical < 0.0f)
+        if (Input.GetKey(KeyCode.S))
         {
             playerBehaviour.addDirection(Direction.Down);
         }
-        else if (Input.GetKeyUp(KeyCode.S) || joyVertical == 0.0f)
+        else if (Input.GetKeyUp(KeyCode.S) )
         {
             playerBehaviour.removeDirection(Direction.Down);
         }
 
-        if (Input.GetKey(KeyCode.A) || joyHorizontal < 0.0f)
+        if (Input.GetKey(KeyCode.A))
         {
             playerBehaviour.addDirection(Direction.Left);
         }
-        else if (Input.GetKeyUp(KeyCode.A) || joyHorizontal == 0.0f)
+        else if (Input.GetKeyUp(KeyCode.A))
         {
             playerBehaviour.removeDirection(Direction.Left);
         }
 
-        if (Input.GetKey(KeyCode.D) || joyHorizontal > 0.0f)
+        if (Input.GetKey(KeyCode.D) )
         {
             playerBehaviour.addDirection(Direction.Right);
         }
-        else if (Input.GetKeyUp(KeyCode.D) || joyHorizontal == 0.0f)
+        else if (Input.GetKeyUp(KeyCode.D) )
         {
             playerBehaviour.removeDirection(Direction.Right);
         }

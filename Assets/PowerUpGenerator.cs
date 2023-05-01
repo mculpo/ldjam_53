@@ -79,7 +79,7 @@ public class PowerUpGenerator : MonoBehaviour
         {
             if (type == PowerUpGeneratorType.SPEED)
             {
-                collision.gameObject.GetComponent<PlayerBehaviour>().applySpeed(12);
+                collision.gameObject.GetComponent<PlayerBehaviour>().applySpeed(15);
             }
             else if (type == PowerUpGeneratorType.TIME)
             {
@@ -88,7 +88,7 @@ public class PowerUpGenerator : MonoBehaviour
             }
             else if (type == PowerUpGeneratorType.INVENCIBILITY)
             {
-                collision.gameObject.GetComponent<PlayerBehaviour>().applyInvencibility(12);
+                collision.gameObject.GetComponent<PlayerBehaviour>().applyInvencibility(15);
             }
 
             active = false;
