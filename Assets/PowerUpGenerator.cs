@@ -11,6 +11,8 @@ public class PowerUpGenerator : MonoBehaviour
     [SerializeField]
     private Sprite SpeedSprite;
 
+
+    private AudioSource auds;
     private SpriteRenderer sr;
 
     [SerializeField]
@@ -28,6 +30,7 @@ public class PowerUpGenerator : MonoBehaviour
         currentTime = 0;
         active = true;
         sr = gameObject.GetComponent<SpriteRenderer>();
+        auds = gameObject.GetComponent<AudioSource>();
         generate();
     }
 
@@ -76,20 +79,25 @@ public class PowerUpGenerator : MonoBehaviour
         {
             if (type == PowerUpGeneratorType.SPEED)
             {
-                collision.gameObject.GetComponent<PlayerBehaviour>().applySpeed(5);
+                collision.gameObject.GetComponent<PlayerBehaviour>().applySpeed(12);
             }
             else if (type == PowerUpGeneratorType.TIME)
             {
-                collision.gameObject.GetComponent<PlayerBehaviour>().applyTime(60);
-                GameObject.Find("Gerenciador").GetComponent<OrderManager>().applyTime(60);
+                collision.gameObject.GetComponent<PlayerBehaviour>().applyTime(45);
+                GameObject.Find("Gerenciador").GetComponent<OrderManager>().applyTime(45);
             }
             else if (type == PowerUpGeneratorType.INVENCIBILITY)
             {
-                collision.gameObject.GetComponent<PlayerBehaviour>().applyInvencibility(8);
+                collision.gameObject.GetComponent<PlayerBehaviour>().applyInvencibility(12);
             }
 
             active = false;
             sr.sprite = null;
+
+            if (!auds.isPlaying)
+            {
+                auds.Play();
+            }
         }
     }
 
