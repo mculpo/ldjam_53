@@ -7,9 +7,13 @@ using UnityEngine;
 public class UIGameManager : Singleton<UIGameManager>
 {
     [SerializeField]
+    private PlayerOrderHolder player;
+    [SerializeField]
     private TextMeshProUGUI order;
     [SerializeField]
     private TextMeshProUGUI currentTime;
+    [SerializeField]
+    private TextMeshProUGUI maxOrder;
     [SerializeField]
     private List<GameObject> objectsOrdersReady;
     [SerializeField]
@@ -20,9 +24,10 @@ public class UIGameManager : Singleton<UIGameManager>
 
 
     void Update()
-    {
+    { 
         DrawTime();
         DrawOrders();
+        maxOrder.text = player.AmountOrder.ToString() + "/" + player.MaximumOrderCapacity.ToString();
     }
 
     public void DrawTime()

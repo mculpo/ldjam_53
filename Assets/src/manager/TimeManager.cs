@@ -24,6 +24,8 @@ public class TimeManager : Singleton<TimeManager>
     private event Action<float> AddTime;
     [SerializeField]
     private event Action<float> RemoveTime;
+    [SerializeField]
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -35,8 +37,6 @@ public class TimeManager : Singleton<TimeManager>
     void Update()
     {
         currentlLevelTime -= Time.deltaTime;
-        Console.WriteLine(currentlLevelTime);
-
         timeCount();
     }
 
@@ -55,7 +55,9 @@ public class TimeManager : Singleton<TimeManager>
 
             if (currentGameTime <= 0)
             {
-                timeOver = true;
+                if(!audioSource.isPlaying)
+                    audioSource.Play();
+                MainMenuManager.instance.loadScene("Score");
             }
         }
     }

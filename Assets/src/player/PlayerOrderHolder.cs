@@ -35,5 +35,6 @@ public class PlayerOrderHolder : MonoBehaviour
     }
 
     public int MaximumOrderCapacity { get => maximumOrderCapacity; set => maximumOrderCapacity = value; }
+    public int AmountOrder { get => orders.Count; }
     public List<GameObject> Orders { get => orders; set => orders = value; }
 }

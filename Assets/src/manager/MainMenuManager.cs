@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenuManager : MonoBehaviour
+public class MainMenuManager : Singleton<MainMenuManager>
 {
     private AudioSource audioSource;
 
@@ -23,10 +23,6 @@ public class MainMenuManager : MonoBehaviour
     public void loadScene(string NameScene)
     {
         StartCoroutine(onLoadScene(NameScene));
-        if (!audioSource.isPlaying)
-        {
-            audioSource.Play();
-        }
     }
 
     public void loadSceneAndDelete(string NameScene, GameObject delete)
