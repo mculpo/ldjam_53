@@ -130,10 +130,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  leftLimit: -5.7
-  rightLimit: 5.7
-  topLimit: 4.5
-  bottomLimit: -4.5
+  leftLimit: -7
+  rightLimit: 7
+  topLimit: 5.5
+  bottomLimit: -5.5
   spriteRenderContent: {fileID: 4995608767358948212}
 --- !u!1 &7510756681308102936
 GameObject:

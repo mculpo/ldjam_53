@@ -22,14 +22,11 @@ public class UIOrderBehaviour : MonoBehaviour
             DrawTime();
         }
     }
-    private void OnEnable()
-    {
-        orderTime.color = Color.white;
-    }
     public void DrawTime()
     {
         if (order.CurrentTime >= 0)
         {
+            orderTime.color = Color.white;
             int minutes = Mathf.FloorToInt(order.CurrentTime / 60);
             int seconds = Mathf.FloorToInt(order.CurrentTime % 60);
 

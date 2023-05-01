@@ -62,8 +62,10 @@ public class Shop : MonoBehaviour
             ordersTmp.Add(order);
             bagSpace--;
         }
-        OnDisableEffect();
+        
         orders = orders.Except(ordersTmp).ToList();
+        if (orders.Count <= 0)
+            OnDisableEffect();
         return ordersTmp;
     }
 
@@ -75,7 +77,7 @@ public class Shop : MonoBehaviour
             Order order = gameObject.AddComponent<Order>();
             order.Type = orderType;
             order.ShopTarget = this.gameObject;
-            order.MaxTime = UnityEngine.Random.Range(10, 15);
+            order.MaxTime = UnityEngine.Random.Range(45, 90);
             OrderManager.instance.addDeliveryPoint(order);
             order.EnableArrowOrder();
             UIGameManager.instance.EnableUIOrder(order);
