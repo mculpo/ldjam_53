@@ -603,17 +603,17 @@ MonoBehaviour:
   m_text: 'developed by:
 
 
-    mrculpo
+    mateus culpo
 
-    dBrino
+    diego brino
 
-    dGoblin
+    Diego Bizzotto
 
-    Ze
+    Jose
+    Vitor Quadrado
 
 
-    some
-    assets were taken from the internet!'
+    some assets were taken from the internet!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6c47c2c9e4cb294d960bcd2aa0f765d, type: 2}
   m_sharedMaterial: {fileID: -8171204617034124302, guid: a6c47c2c9e4cb294d960bcd2aa0f765d, type: 2}
@@ -887,7 +887,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0642737856212be4192ac511c395b2c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 2
+  durationIn: 3
+  durationOut: 1
 --- !u!114 &1612462359
 MonoBehaviour:
   m_ObjectHideFlags: 0
