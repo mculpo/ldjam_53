@@ -54,6 +54,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rotateSpeed: 200
+  isSlowed: 0
+  visualShader: {fileID: 5140124564665949066}
+  pulseEffect: {fileID: 0}
 --- !u!114 &5140124563391717362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,7 +319,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1457450463
-  m_SortingLayer: -2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 1231170850, guid: 3b86f4de06638354b806e194a1479e25, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
