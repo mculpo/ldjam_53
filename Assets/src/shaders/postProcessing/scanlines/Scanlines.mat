@@ -71,7 +71,7 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _ScanlineFrequency: 0.4
-    - _ScanlineIntensity: 0.55
+    - _ScanlineIntensity: 0.35
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _Speed: 30
