@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -16,6 +23,10 @@ public class MainMenuManager : MonoBehaviour
     public void loadScene(string NameScene)
     {
         StartCoroutine(onLoadScene(NameScene));
+        if (!audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
     }
 
     public void loadSceneAndDelete(string NameScene, GameObject delete)

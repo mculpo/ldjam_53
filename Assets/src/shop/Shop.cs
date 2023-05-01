@@ -20,9 +20,12 @@ public class Shop : MonoBehaviour
     [SerializeField]
     private GameObject imageEffect;
 
+    private AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start () {
         orders = new List<GameObject>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -34,6 +37,11 @@ public class Shop : MonoBehaviour
             if (orders.Count > 0 && player.Orders.Count < player.MaximumOrderCapacity)
             {
                 player.holdOrder(takeOrder(player.MaximumOrderCapacity - player.Orders.Count));
+
+                if (!audioSource.isPlaying)
+                {
+                    audioSource.Play();
+                }
             }
         }
     }
