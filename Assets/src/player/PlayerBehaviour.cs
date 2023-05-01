@@ -10,11 +10,26 @@ public class PlayerBehaviour : MonoBehaviour
     public float speed = 5f;
     public float rotateSpeed = 150f;
 
+    private AudioSource audioSource;
+
     public Direction myDirection { get; set; }
+
+    void Update()
+    {
+        if (myDirection != Direction.None && !audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
+        else if (myDirection == Direction.None && audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
+    }
 
     void Awake()
     {
         myTransform = GetComponent<Transform>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void move(float vertical, float horizontal)
