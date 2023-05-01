@@ -10,9 +10,8 @@ public class PlayerBehaviour : MonoBehaviour
     public float speed = 5f;
     public float rotateSpeed = 150f;
 
-<<<<<<< HEAD
     private AudioSource audioSource;
-=======
+
     private float originalSpeed;
     public bool isSlowed = false;
 
@@ -20,7 +19,6 @@ public class PlayerBehaviour : MonoBehaviour
     private SpriteRenderer visualShader;  
     private Material originalShader;
     public Material pulseEffect;
->>>>>>> 8d9a2a0a2002f97ed6d8ffbb5014f995c113011c
 
     public Direction myDirection { get; set; }
 
