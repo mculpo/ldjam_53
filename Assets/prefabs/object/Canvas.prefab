@@ -592,7 +592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa396bc39e88a6544beef61f462d06ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aroundImage: {fileID: 0}
+  aroundImage: {fileID: 6768022294327449744}
   orderType: {fileID: 6768022296236729314}
   orderTime: {fileID: 6768022294844782523}
 --- !u!1 &6768022294430363558
@@ -941,7 +941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa396bc39e88a6544beef61f462d06ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aroundImage: {fileID: 0}
+  aroundImage: {fileID: 6768022294531538388}
   orderType: {fileID: 6768022295552316364}
   orderTime: {fileID: 6768022294849141659}
 --- !u!1 &6768022294569500751
@@ -1171,9 +1171,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa396bc39e88a6544beef61f462d06ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aroundImage: {fileID: 0}
+  aroundImage: {fileID: 6768022294602942742}
   orderType: {fileID: 6768022294454345499}
-  orderTime: {fileID: 0}
+  orderTime: {fileID: 6768022296102059021}
 --- !u!1 &6768022294609901316
 GameObject:
   m_ObjectHideFlags: 0
@@ -2255,7 +2255,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6768022295280809402}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2268,7 +2268,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.35, y: -250}
+  m_AnchoredPosition: {x: 1.35, y: -249.99998}
   m_SizeDelta: {x: 267.44, y: 102.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6768022295280809398
@@ -2321,9 +2321,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa396bc39e88a6544beef61f462d06ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aroundImage: {fileID: 0}
-  orderType: {fileID: 0}
-  orderTime: {fileID: 0}
+  aroundImage: {fileID: 6768022295280809401}
+  orderType: {fileID: 6768022294710357626}
+  orderTime: {fileID: 6768022295591403473}
 --- !u!1 &6768022295376470233
 GameObject:
   m_ObjectHideFlags: 0
@@ -2665,7 +2665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa396bc39e88a6544beef61f462d06ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aroundImage: {fileID: 0}
+  aroundImage: {fileID: 6768022294602942742}
   orderType: {fileID: 6768022295376470231}
   orderTime: {fileID: 6768022294163752672}
 --- !u!1 &6768022295552316366
@@ -4290,7 +4290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa396bc39e88a6544beef61f462d06ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aroundImage: {fileID: 0}
+  aroundImage: {fileID: 6768022296121434359}
   orderType: {fileID: 6768022296179104319}
   orderTime: {fileID: 6768022296137219631}
 --- !u!1 &6768022296137219665

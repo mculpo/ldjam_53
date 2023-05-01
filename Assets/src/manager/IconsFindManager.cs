@@ -8,6 +8,7 @@ public class IconsFindManager : Singleton<IconsFindManager>
     public GameObject arrowFindIcon;
     public Sprite hamburguer;
     public Sprite pizza;
+    public Sprite desserts;
 
     // Start is called before the first frame update
     void Awake()
@@ -23,7 +24,7 @@ public class IconsFindManager : Singleton<IconsFindManager>
         {
             go.GetComponent<ArrowController>()
                 .spriteRenderContent
-                .sprite = orderType.Equals(OrderType.Pizza) ? pizza : hamburguer;
+                .sprite = orderType.Equals(OrderType.Pizza) ? pizza : orderType.Equals(OrderType.Hamburguer) ? hamburguer : desserts;
             go.SetActive(true);
         }
         return go;

@@ -13,9 +13,15 @@ public class MainMenuManager : MonoBehaviour
         }
     }
 
-    public void onCLickJogar()
+    public void loadScene(string NameScene)
     {
-        SceneManager.LoadScene(0);
+        StartCoroutine(onLoadScene(NameScene));
+    }
+
+    public IEnumerator onLoadScene(string NameScene)
+    {
+        yield return StartCoroutine(FadeController.instance.FadeInCoroutine());
+        SceneManager.LoadScene(NameScene);
     }
 
     public void onCLickQuit()

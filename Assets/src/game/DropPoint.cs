@@ -6,7 +6,10 @@ using System.Linq;
 public class DropPoint : MonoBehaviour
 {
     private Order order;
-
+    [SerializeField]
+    private GameObject particleEffect;
+    [SerializeField]
+    private GameObject imageEffect;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
@@ -32,11 +35,24 @@ public class DropPoint : MonoBehaviour
                 if (ordersDelivered.Count > 0)
                 {
                     player.Orders = player.Orders.Except(ordersDelivered).ToList();
-                    Debug.Log("Pedidos Entregues!");
+                    OnDisableEffect();
                 }
             }
         }
     }
+    public void OnEnableEffect(Color color)
+    {
+        particleEffect.SetActive(true);
+        imageEffect.SetActive(true);
+        particleEffect.GetComponent<ParticleSystem>().startColor = new Color(color.r, color.g, color.b, 0.3f);
+        imageEffect.GetComponent<SpriteRenderer>().color = color;
+    }
 
+    public void OnDisableEffect()
+    {
+        particleEffect.SetActive(false);
+        imageEffect.SetActive(false);
+    }
     public Order Order { get => order; set => order = value; }
 }
+

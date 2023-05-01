@@ -15,6 +15,11 @@ public class Shop : MonoBehaviour
     private OrderType orderType;
     private List<GameObject> orders;
 
+    [SerializeField]
+    private GameObject particleEffect;
+    [SerializeField]
+    private GameObject imageEffect;
+
     // Start is called before the first frame update
     void Start () {
         orders = new List<GameObject>();
@@ -45,10 +50,11 @@ public class Shop : MonoBehaviour
             UIGameManager.instance.DisableUIOrder(order_aux);
             order_aux.EnableArrowDelivering();
             UIGameManager.instance.EnableUIDelivering(order_aux);
+            order_aux.Pos.GetComponent<DropPoint>().OnEnableEffect(order_aux.RefIconTarget.GetComponent<ArrowController>().spriteRenderContent.color);
             ordersTmp.Add(order);
             bagSpace--;
         }
-
+        OnDisableEffect();
         orders = orders.Except(ordersTmp).ToList();
         return ordersTmp;
     }
@@ -66,8 +72,21 @@ public class Shop : MonoBehaviour
             order.EnableArrowOrder();
             UIGameManager.instance.EnableUIOrder(order);
             orders.Add(gameObject);
+            OnEnableEffect();
             return order;
         }
         return null;
+    }
+
+    public void OnEnableEffect()
+    {
+        particleEffect.SetActive(true);
+        imageEffect.SetActive(true);
+    }
+
+    public void OnDisableEffect()
+    {
+        particleEffect.SetActive(false);
+        imageEffect.SetActive(false);
     }
 }
