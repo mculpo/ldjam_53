@@ -73,6 +73,8 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (!isSlowed && !isIvencible)
         {
+            CancelInvoke("resetSpeed");
+
             isSlowed = true;
 
             speed *= 0.75f;
@@ -88,6 +90,8 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (!isSpeeded)
         {
+            CancelInvoke("resetSpeed");
+
             isSpeeded = true;
 
             speed *= 1.5f;
@@ -103,6 +107,8 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (!isIvencible)
         {
+            CancelInvoke("resetInvencibility");
+
             isIvencible = true;
 
             applyPulseEffect(powerUpEffect1);
